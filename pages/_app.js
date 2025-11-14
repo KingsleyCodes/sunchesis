@@ -1,4 +1,15 @@
-// pages/_app.js
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import '../styles/globals.css';
+import Layout from '../components/Layout/Layout';
+import { CartProvider } from '../context/CartContext';
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <CartProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </CartProvider>
+  );
 }
+
+export default MyApp;
