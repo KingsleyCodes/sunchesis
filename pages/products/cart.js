@@ -1,6 +1,6 @@
-import { useCart } from '../context/CartContext';
-import CartItem from '../components/cart/CartItem';
-import CartSummary from '../components/cart/CartSummary';
+import { useCart } from '@/context/CartContext';
+import CartItem from '@/components/cart/CartItem';
+import CartSummary from '@/components/cart/CartSummary';
 import Link from 'next/link';
 
 export default function Cart() {
